@@ -62,7 +62,7 @@ const contact = () => {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center gap-y-8 text-center bg-cream w-64 h-auto py-6 px-6 rounded-lg transition ease-in-out duration-300 hover:scale-100 shadow-xl hover:shadow-2xl shadow-gray-300">
+            <div className="flex flex-col justify-center gap-y-8 text-center bg-cream w-64 h-auto py-6 px-5 rounded-lg transition ease-in-out duration-300 hover:scale-100 shadow-xl hover:shadow-2xl shadow-gray-300">
               <div className="w-full flex justify-center">
                 <div className="flex justify-center items-center h-24 w-24 bg-gray-100 rounded-full">
                   <MdEmail className="text-5xl text-brown text-center" />
