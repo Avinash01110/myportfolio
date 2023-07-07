@@ -28,13 +28,13 @@ const home = ({skills}) => {
         <Zoom left isvisible>
           <div className="flex flex-col items-center gap-y-4 pt-48 sm:py-44 xl:py-0">
             <span className="w-full text-2xl text-start font-acme text-brown">
-              <Zoom left cascade>
+              <Zoom left cascade isvisible>
                 Hello!
               </Zoom>
             </span>
             <div className="flex flex-row gap-x-3 md:gap-x-6 lg:gap-x-6 xl:gap-x-6 2xl:gap-x-6">
               <span className="text-4xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl font-acme text-brown">
-                <Zoom left cascade>
+                <Zoom left cascade isvisible>
                   I'm
                 </Zoom>
               </span>
@@ -150,15 +150,15 @@ const home = ({skills}) => {
       </div>
 
       <div className="ct2 bg-brown h-auto pt-36 pb-72 relative overflow-hidden">
+          <Zoom top cascade isvisible>
         <h2 className="flex justify-center text-center font-acme text-cream text-6xl ">
-          <Zoom top cascade>
             What I do?
-          </Zoom>
         </h2>
+          </Zoom>
         <div className="flex flex-col gap-y-44 py-32">
           <div className="flex xl:flex-row flex-col justify-between gap-16 xl:px-12 2xl:px-44">
-            <Zoom left isvisible>
-              <div className="w-auto flex justify-center h-auto">
+            <Zoom left cascade isvisible>
+              <div className="w-auto flex justify-center h-auto rounded-xl">
                 <Image
                   className="flex px-6 sm:px-16 md:px-28 lg:px-0 xl:h-[25rem] xl:w-[35rem] rounded-xl"
                   src={"/fullstack.png"}
@@ -168,38 +168,38 @@ const home = ({skills}) => {
                 ></Image>
               </div>
             </Zoom>
-            <Zoom right isvisible>
+            <Zoom right cascade isvisible>
               <div className="w-auto px-6 sm:px-16 md:px-28 lg:px-0 flex flex-col items-center justify-center gap-y-10">
+                  <Zoom right isvisible>
                 <h2 className="md:w-[35rem] flex justify-center items-center font-acme text-cream text-4xl">
-                  <Zoom right cascade isvisible>
                     Full Stack Development
-                  </Zoom>
                 </h2>
+                  </Zoom>
                 <div className="md:w-[35rem] flex flex-col gap-y-6 text-justify">
                   <div className="group flex flex-row items-center gap-x-2">
+                      <Zoom right isvisible>
                     <BsPencilFill className="group-hover:scale-125 transition ease-in-out duration-300 text-cream text-xl" />
-                    <span className="font-acme text-xl text-cream tracking-wider">
-                      <Zoom right cascade isvisible>
+                    <span className="font-acme text-xl text-cream text-justify tracking-wider">
                         Building responsive front end websites using React,
                         Nextjs.
-                      </Zoom>
                     </span>
+                      </Zoom>
                   </div>
                   <div className="group flex flex-row items-center gap-x-2">
+                      <Zoom right isvisible>
                     <BsPencilFill className="group-hover:scale-125 transition ease-in-out duration-300 text-cream text-xl" />
-                    <span className="font-acme text-xl text-cream tracking-wider">
-                      <Zoom right cascade isvisible>
+                    <span className="font-acme text-xl text-cream text-justify tracking-wider">
                         Using Mongodb atlas or compass as a database.
-                      </Zoom>
                     </span>
+                      </Zoom>
                   </div>
                   <div className="group flex flex-row items-center gap-x-2">
+                      <Zoom right isvisible>
                     <BsPencilFill className="group-hover:scale-125 transition ease-in-out duration-300 text-cream text-xl" />
-                    <span className="font-acme text-xl text-cream tracking-wider">
-                      <Zoom right cascade isvisible>
+                    <span className="font-acme text-xl text-cream text-justify tracking-wider">
                         Creating backend of websites in Node, Expressjs.
-                      </Zoom>
                     </span>
+                      </Zoom>
                   </div>
                 </div>
               </div>
@@ -209,43 +209,44 @@ const home = ({skills}) => {
           <div className="flex xl:flex-row flex-col justify-between gap-16 xl:px-12 2xl:px-44">
             <Zoom left cascade isvisible>
               <div className="w-auto px-6 sm:px-16 md:px-28 lg:px-0 flex flex-col items-center justify-center gap-y-10">
+                  <Zoom left isvisible>
                 <h2 className="md:w-[35rem] flex justify-center items-center font-acme text-cream text-4xl">
-                  <Zoom left cascade>
                     Search Engine Optimization (SEO)
-                  </Zoom>
                 </h2>
+                  </Zoom>
                 <div className="md:w-[35rem] flex flex-wrap flex-col gap-y-6 text-justify">
                   <div className="group flex flex-row items-center gap-x-2">
-                    <BsPencilFill className=" w-auto group-hover:scale-125 transition ease-in-out duration-300 text-cream text-xl" />
-                    <span className="font-acme text-xl text-cream tracking-wider">
-                      <Zoom left cascade>
+                      <Zoom left isvisible>
+                    <BsPencilFill className="group-hover:scale-125 transition ease-in-out duration-300 text-cream text-xl" />
+                    <span className="font-acme text-xl text-cream text-justify tracking-wider">
                         Making optimize content with strategic keyword
                         placement.
-                      </Zoom>
                     </span>
+                      </Zoom>
                   </div>
                   <div className="group flex flex-row items-center gap-x-2">
-                    <BsPencilFill className="w-auto group-hover:scale-125 transition ease-in-out duration-300 text-cream text-base  md:text-xl 2xl:text-xl" />
-                    <span className="font-acme text-xl text-cream tracking-wider">
-                      <Zoom left cascade>
+                      <Zoom left isvisible>
+                      {/* w-auto group-hover:scale-125 transition ease-in-out duration-300 text-cream text-base  md:text-xl 2xl:text-xl */}
+                    <BsPencilFill className="group-hover:scale-125 transition ease-in-out duration-300 text-cream text-xl" />
+                    <span className="font-acme text-xl text-cream text-justify tracking-wider">
                         Creating informative and engaging content.
-                      </Zoom>
                     </span>
+                      </Zoom>
                   </div>
                   <div className="group flex flex-row items-center gap-x-2">
-                    <BsPencilFill className="w-auto group-hover:scale-125 transition ease-in-out duration-300 text-cream text-3xl" />
-                    <span className="font-acme text-xl text-cream tracking-wider">
-                      <Zoom left cascade>
+                      <Zoom left isvisible>
+                    <BsPencilFill className="group-hover:scale-125 transition ease-in-out duration-300 text-cream text-xl" />
+                    <span className="font-acme text-xl text-cream text-justify tracking-wider">
                         Optimizing website loading speed to provide seamless and
                         intuitive website experience.
-                      </Zoom>
                     </span>
+                      </Zoom>
                   </div>
                 </div>
               </div>
             </Zoom>
             <Zoom right cascade isvisible>
-              <div className="w-auto flex justify-center h-auto">
+              <div className="w-auto flex justify-center h-auto rounded-xl">
                 <Image
                   className="flex px-6 sm:px-16 md:px-28 lg:px-0 xl:h-[25rem] xl:w-[35rem] rounded-xl"
                   src={"/seo.png"}
@@ -259,7 +260,7 @@ const home = ({skills}) => {
 
           <div className="flex xl:flex-row flex-col justify-between gap-16 xl:px-12 2xl:px-44">
             <Zoom left cascade isvisible>
-              <div className="w-auto flex justify-center h-auto">
+              <div className="w-auto flex justify-center h-auto rounded-xl">
                 <Image
                   className="flex px-6 sm:px-16 md:px-28 lg:px-0 xl:h-[25rem] xl:w-[35rem] rounded-xl"
                   src={"/data.png"}
@@ -271,35 +272,35 @@ const home = ({skills}) => {
             </Zoom>
             <Zoom right cascade isvisible>
               <div className="w-auto px-6 sm:px-16 md:px-28 lg:px-0 flex flex-col items-center justify-center gap-y-10">
+                  <Zoom right isvisible>
                 <h2 className="md:w-[35rem] flex justify-center items-center font-acme text-cream text-4xl">
-                  <Zoom right cascade isvisible>
                     Data Analysis
-                  </Zoom>
                 </h2>
+                  </Zoom>
                 <div className="md:w-[35rem] flex flex-col gap-y-6 text-justify">
                   <div className="group flex flex-row items-center gap-x-2">
+                      <Zoom right isvisible>
                     <BsPencilFill className="group-hover:scale-125 transition ease-in-out duration-300 text-cream text-xl" />
-                    <span className="font-acme text-xl text-cream tracking-wider">
-                      <Zoom right cascade isvisible>
+                    <span className="font-acme text-xl text-cream text-justify tracking-wider">
                         Performing Exploratory Data Analysis(EDA) on dataset.
-                      </Zoom>
                     </span>
+                      </Zoom>
                   </div>
                   <div className="group flex flex-row items-center gap-x-2">
+                      <Zoom right isvisible>
                     <BsPencilFill className="group-hover:scale-125 transition ease-in-out duration-300 text-cream text-xl" />
-                    <span className="font-acme text-xl text-cream tracking-wider">
-                      <Zoom right cascade isvisible>
+                    <span className="font-acme text-xl text-cream text-justify tracking-wider">
                         Providing dataset to various Machine learning models.
-                      </Zoom>
                     </span>
+                      </Zoom>
                   </div>
                   <div className="group flex flex-row items-center gap-x-2">
+                      <Zoom right isvisible>
                     <BsPencilFill className="group-hover:scale-125 transition ease-in-out duration-300 text-cream text-xl" />
-                    <span className="font-acme text-xl text-cream tracking-wider">
-                      <Zoom right cascade isvisible>
+                    <span className="font-acme text-xl text-cream text-justify tracking-wider">
                         Deriving insigts from test dataset based on models.
-                      </Zoom>
                     </span>
+                      </Zoom>
                   </div>
                 </div>
               </div>

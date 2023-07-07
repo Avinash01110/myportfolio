@@ -60,18 +60,18 @@ const projects = ({projects}) => {
         </Zoom>
         <Zoom right isvisible>
           <div className="w-auto h-auto lg:w-1/2 flex flex-col justify-end gap-y-6 lg:pb-36 lg:pt-24 xl:py-48">
+            <Zoom right cascade isvisible>
             <h1 className="flex justify-center text-center text-5xl sm:text-7xl font-bagel text-brown">
-            <Zoom right cascade isvisible>
               Projects
-            </Zoom>
             </h1>
+            </Zoom>
+            <Zoom right isvisible>
             <h2 className="flex justify-center text-xl font-acme text-brown text-center">
-            <Zoom right cascade isvisible>
               My projects makes use of vast variety of latest technology tools.
               My best experience is to create Data Science projects and deploy
               them to web applications using cloud infrastructure.
-            </Zoom>
             </h2>
+            </Zoom>
           </div>
         </Zoom>
         </div>
@@ -96,10 +96,14 @@ const projects = ({projects}) => {
             <div className="flex flex-col gap-4 w-full px-6">
 
                 <span className="h-auto w-auto flex flex-wrap flex-row gap-4 justify-center text-brown text-xl font-acme">
+                <Zoom cascade isvisible delay={1000}>
                 {(item.logo).map((k,key)=>{return <Image key={key} className="w-8 h-auto" src={builder.image(k).url()} height={512} width={512} alt="error"></Image>})}
+                </Zoom>
                 </span>
-
+                
+                <Zoom cascade isvisible delay={1000}>
                 <span className="flex justify-center text-brown text-xl font-acme">{item.title}</span>
+                </Zoom>
 
                 <span className="flex flex-row justify-end gap-y-2 gap-x-6">
                 <Link href={`${item.giturl}`}>

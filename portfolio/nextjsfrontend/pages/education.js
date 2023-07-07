@@ -9,6 +9,7 @@ import Bounce from 'react-reveal/Bounce';
 import Zoom from 'react-reveal/Zoom';
 
 
+
 const client = createClient({
   projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
   dataset: process.env.NEXT_PUBLIC_DATASET_NAME,
@@ -47,16 +48,16 @@ const education = ({certificates,certificatesimage}) => {
           </Zoom>
           <Zoom right isvisible>
           <div className="w-auto h-auto lg:w-1/2 flex flex-col justify-end gap-y-6 lg:pb-36 lg:pt-24 xl:py-48">
+          <Zoom right cascade isvisible>
             <h1 className="flex justify-center text-5xl sm:text-7xl font-bagel text-brown">
-            <Zoom right cascade isvisible>
               Education
-            </Zoom>
             </h1>
-            <h2 className="flex justify-center items-center text-center text-2xl sm:text-4xl font-acme text-brown">
-            <Zoom right cascade isvisible>
-              Basic Qualification and Certification
             </Zoom>
+            <Zoom right isvisible>
+            <h2 className="flex justify-center items-center text-center text-2xl sm:text-4xl font-acme text-brown">
+              Basic Qualification and Certification
             </h2>
+            </Zoom>
             <div className="flex flex-row justify-center">
               {/* <span className="text-xl font-acme text-brown">Logo</span> */}
             </div>
@@ -66,11 +67,11 @@ const education = ({certificates,certificatesimage}) => {
       </div>
 
       <div className="flex flex-col gap-y-28 h-auto pt-36 pb-80 bg-white relative overflow-hidden">
+      <Zoom top cascade isvisible>
         <h2 className="flex justify-center text-center font-acme text-brown text-6xl ">
-          <Zoom top cascade isvisible>
           Degrees
-          </Zoom>
         </h2>
+      </Zoom>
         <Bounce right isvisible duration={2000}>
         <div className="absolute left-0 -top-1 bg-cream h-64 w-8 sm:w-16 md:w-24 border border-cream"></div>
         </Bounce>
@@ -93,24 +94,24 @@ const education = ({certificates,certificatesimage}) => {
               <div className="flex flex-col lg:flex-row lg:justify-between px-6 py-7 bg-gray-100">
 
                 <div className="flex justify-start flex-col gap-y-2">
-                  <h3 className="text-brown font-wide font-bagel text-3xl">
-                  <Zoom right cascade isvisible>
+                  <Zoom right isvisible>
+                  <h3 className="text-brown text-justify font-wide font-bagel text-3xl">
                     Madhav Institute Of Technology & Science, Gwalior
-                  </Zoom>
                   </h3>
-                  <h4 className="text-brown font-wide font-acme text-xl">
-                  <Zoom right cascade isvisible>
-                    B.tech in Artificial intelligence & Machine learning
                   </Zoom>
+                  <Zoom right isvisible>
+                  <h4 className="text-brown text-justify font-wide font-acme text-xl">
+                    B.tech in Artificial intelligence & Machine learning
                   </h4>
+                  </Zoom>
                 </div>
 
                 <div className="flex justify-start pt-2">
-                  <span className="text-brown text-lg font-bold">
-                  <Zoom right cascade isvisible>
+                  <Zoom right isvisible>
+                  <span className="text-brown text-lg text-justify font-bold">
                     2021 - 2025
-                  </Zoom>
                   </span>
+                  </Zoom>
                 </div>
 
               </div>
@@ -118,28 +119,28 @@ const education = ({certificates,certificatesimage}) => {
               <div className="flex items-start justify-center flex-col gap-y-6 px-6 py-4">
 
                 <div className="group flex flex-row items-center gap-x-2">
+                  <Zoom right isvisible>
                   <BsPencilFill className="group-hover:scale-125 transition ease-in-out duration-300 text-brown text-xl" />
-                  <span className="font-acme text-xl text-brown tracking-wider">
-                  <Zoom right cascade isvisible>
+                  <span className="font-acme text-xl text-brown text-justify tracking-wider">
                   I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, ML etc.
-                  </Zoom>
                   </span>
+                  </Zoom>
                 </div>
                 <div className="group flex flex-row items-center gap-x-2">
+                  <Zoom right isvisible>
                   <BsPencilFill className="group-hover:scale-125 transition ease-in-out duration-300 text-brown text-xl" />
-                  <span className="font-acme text-xl text-brown tracking-wider">
-                  <Zoom right cascade isvisible>
+                  <span className="font-acme text-justify text-xl text-brown tracking-wider">
                   Apart from this, I have gained skills like Full Stack Development, SEO, Data Analysis.
-                  </Zoom>
                   </span>
+                  </Zoom>
                 </div>
                 <div className="group flex flex-row items-center gap-x-2">
+                  <Zoom right isvisible>
                   <BsPencilFill className="group-hover:scale-125 transition ease-in-out duration-300 text-brown text-xl" />
-                  <span className="font-acme text-xl text-brown tracking-wider">
-                  <Zoom right cascade isvisible>
+                  <span className="font-acme text-xl text-justify text-brown tracking-wider">
                     Also done some projects on these respective skills.
-                  </Zoom>
                   </span>
+                  </Zoom>
                 </div>
 
               </div>
@@ -166,9 +167,12 @@ const education = ({certificates,certificatesimage}) => {
             <div className="w-auto h-auto rounded-lg bg-gray-100">
               <Image className="rounded-lg" src={certificatesimage[key].imageUrl} height={item.image.height} width={item.image.width} alt={`${item.image.caption}`}></Image>
             </div>
-            <div className="flex flex-col gap-y-2 justify-center ">
-            <span className="flex justify-center text-brown text-xl font-acme">{item.title}</span>
+            <div className="flex flex-col gap-y-2 justify-center">
+              
+              <Zoom cascade isvisible delay={1000}><span className="flex justify-center text-brown text-xl font-acme">{item.title}</span></Zoom>
+              <Zoom isvisible delay={1000}>
             <span className="flex justify-center text-justify text-brown px-5 pb-3 text-lg font-acme">{item.description}</span>
+            </Zoom>
             </div>
           </div>
 

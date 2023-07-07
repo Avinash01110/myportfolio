@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="container px-5 py-20 mx-auto flex md:items-center lg:zitems-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           
           <div className="flex-grow flex justify-center flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-            <Fade isvisible>
+            <Fade cascade isvisible>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-bagel text-brown tracking-wide text-2xl mb-3">
                 Links
@@ -40,7 +40,7 @@ const Footer = () => {
               </nav>
             </div>
             </Fade>
-            <Fade isvisible>
+            <Fade cascade isvisible>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-bagel text-brown tracking-wide text-2xl mb-3">
                 Services
@@ -58,13 +58,13 @@ const Footer = () => {
               </nav>
             </div>
             </Fade>
-            <Fade isvisible>
+            <Fade cascade isvisible>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-bagel text-brown tracking-wide text-2xl mb-3">
                 Have a Question?
               </h2>
-              <nav className="list-none mb-10 flex flex-col sm:items-center md:items-start justify-center">
-                <li className="flex flex-row justify-start items-center gap-x-2">
+              <nav className="list-none mb-10 flex flex-col items-center sm:items-center md:items-start justify-center">
+                <li className="flex flex-wrap flex-row justify-start items-center gap-x-2">
                   <MdOutlinePhoneIphone className="inline-flex text-brown text-lg font-acme" />
                   <span className="text-brown font-acme text-lg">8103620490</span>
                 </li>
