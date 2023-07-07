@@ -96,12 +96,12 @@ const projects = ({projects}) => {
             <div className="flex flex-col gap-4 w-full px-6">
 
                 <span className="h-auto w-auto flex flex-wrap flex-row gap-4 justify-center text-brown text-xl font-acme">
-                <Zoom cascade isvisible delay={1000}>
+                <Zoom cascade isvisible delay={500}>
                 {(item.logo).map((k,key)=>{return <Image key={key} className="w-8 h-auto" src={builder.image(k).url()} height={512} width={512} alt="error"></Image>})}
                 </Zoom>
                 </span>
                 
-                <Zoom cascade isvisible delay={1000}>
+                <Zoom cascade isvisible delay={500}>
                 <span className="flex justify-center text-brown text-xl font-acme">{item.title}</span>
                 </Zoom>
 

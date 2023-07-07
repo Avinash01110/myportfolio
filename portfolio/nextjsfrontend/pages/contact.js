@@ -51,12 +51,12 @@ const contact = () => {
               </div>
               
               <div className="flex flex-col gap-y-2">
-                <Zoom cascade invisible delay={1000}>
+                <Zoom cascade invisible delay={500}>
                 <h3 className="text-brown text-lg leading-6 font-medium uppercase">
                   Contact Number
                 </h3>
                 </Zoom>
-                <Zoom cascade invisible delay={1000}>
+                <Zoom cascade invisible delay={500}>
                 <p className="text-brown cursor pointer">+918103620490</p>
                 </Zoom>
               </div>
@@ -70,12 +70,12 @@ const contact = () => {
               </div>
 
               <div className="flex flex-col gap-y-2">
-              <Zoom cascade invisible delay={1000}>
+              <Zoom cascade invisible delay={500}>
                 <h3 className="text-brown text-lg leading-6 font-medium uppercase">
                   Email Address
                 </h3>
               </Zoom>
-              <Zoom cascade invisible delay={1000}> 
+              <Zoom cascade invisible delay={500}> 
                 <p className="text-brown cursor pointer">
                   itsavinashgupta01@gmail.com
                 </p>

@@ -169,8 +169,8 @@ const education = ({certificates,certificatesimage}) => {
             </div>
             <div className="flex flex-col gap-y-2 justify-center">
               
-              <Zoom cascade isvisible delay={1000}><span className="flex justify-center text-brown text-xl font-acme">{item.title}</span></Zoom>
-              <Zoom isvisible delay={1000}>
+              <Zoom cascade isvisible delay={500}><span className="flex justify-center text-brown text-xl font-acme">{item.title}</span></Zoom>
+              <Zoom isvisible delay={500}>
             <span className="flex justify-center text-justify text-brown px-5 pb-3 text-lg font-acme">{item.description}</span>
             </Zoom>
             </div>
